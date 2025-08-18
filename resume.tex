@@ -3,6 +3,13 @@
 \usepackage{titlesec}
 \usepackage{titling}
 \usepackage[margin=1in]{geometry}
+\usepackage{multicol}
+\usepackage{paralist}
+\usepackage{datetime}
+\usepackage{hyperref}
+
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH], \THEYEAR}
 
 \titleformat{\section}
 {\bfseries\large}
@@ -10,7 +17,7 @@
 {0em}
 {}[\titlerule]
 
-\titleformat{\subsection}[runin]
+\titleformat{\subsection}
 {\bfseries}
 {}
 {0em}
@@ -27,7 +34,7 @@
 
 		443-516-6830
 
-		https://github.com/spiritualhost
+		\href{https://github.com/spiritualhost}{Github -- spiritualhost}
 	\end{center}
 }
 
@@ -38,7 +45,6 @@
 
 \noindent
 
-\title{Resume}
 \author{Ryan Piazza}
 
 \maketitle
@@ -46,23 +52,43 @@
 \section{Technical Skills}
 
 \subsection{System Administration}
+\vspace{-1em} %Huge space here otherwise
 
-Active Directory Management, Github Management, Fundamental Network Security, Sophos Firewall, VMware vSphere, VirtualBox, KVM/QEMU, Operating System Management (Windows, MacOS, and Linux), VPN Setup, Encryption (PGP and Bitlocker), Machine Learning (OpenAI API and Ollama local models), Cryptocurrency, PC Hardware and Construction
+\begin{multicols}{2}
+	\begin{compactitem}
+		\item Active Directory Management
+		\item Github Management
+		\item Fundamental Network Security (Sophos)
+		\item Virtualization (VMware vSphere, VirtualBox, KVM/QEMU)
+		\item Operating System Management
+		\item VPN Setup
+		\item Encryption (PGP and Bitlocker)
+		\item Machine Learning (OpenAI API and Ollama)
+		\item Cryptocurrency Wallets
+		\item PC Hardware and Construction
+	\end{compactitem}
+\end{multicols}
 
 \subsection{Programming}
 
 Python, C
 
 \subsection{Scripting} 
+
 Bash, Powershell
 
 \subsection{Markup}
-LaTex, HTML, CSS
+
+LaTex, HTML, CSS, R Markdown
 
 
-\section{General Skills}
+\section{Job Experience}
 
-Problem-Solving, Communication, Adaptability, Multitasking, Time Management, Organization
+\subsection{IT Specialist - Rollins Data Systems}
+\textbf{March 2025 - \monthyeardate\today} - Daily management of IT infrastructure at a nationwide caging and donor relations company. Security through Sophos Firewall, Active Directory, Wazuh monitoring, and GLPI ticketing. Assistance of remote workers with vSphere Windows environments. Physical security setup (RFID door scanners, security cameras, WAP placement). PCI redaction assistance. 
+
+\subsection{Escrow Accountant - EngageUSA}
+\textbf{February 2024 - March 2025} - Managed daily book balancing for nationwide non-profit organizations, ranging from political action committees to animal rights organizations. Resolved discrepancies in data with caging team, improving accuracy of donor information in database. Administered payroll for mid-sized restaurant and political action committee, ensuring compliance with timekeeping and deductions. Prepared yearly tax forms. Initiated wire and ACH transfers.  
 
 \section{Education}
 
@@ -73,23 +99,4 @@ Attended the University of Maryland, Baltimore County, graduating in 2023 with a
 
 Sophos Firewall Engineer Certification. Currently studying for the Comptia A+. 
 
-\section{Job Experience}
-
-
-\subsection{IT Specialist - Rollins Data Systems}
-\textbf{From March 2025 - \today} - Daily management of IT infrastructure at a nationwide caging and donor relations company. Security through Sophos Firewall, Active Directory, Wazuh monitoring, and GLPI ticketing. Assistance of remote workers with vSphere Windows environments. Physical security setup (RFID door scanners, security cameras, WAP placement). PCI redaction assistance. 
-
-
-\subsection{Escrow Accountant - EngageUSA}
-\textbf{From February 2024 - March 2025} - Managed daily book balancing for nationwide non-profit organizations, ranging from political action committees to animal rights organizations. Resolved discrepancies in data with caging team, improving accuracy of donor information in database. Administered payroll for mid-sized restaurant and political action committee, ensuring compliance with timekeeping and deductions. Prepared yearly tax forms. Initiated wire and ACH transfers.  
-
-\section{Service}
-
-I am an Eagle Scout. I volunteer with the Humane Society in my free time. In my personal life, I seek to minimize my carbon footprint and regularly contribute to environmental organizations like the World Wildlife Fund.  
-
 \end{document}
-
-
-
-
-

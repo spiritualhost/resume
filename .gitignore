@@ -1,0 +1,7 @@
+#Ignore the following file formats
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.out
