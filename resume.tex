@@ -5,11 +5,7 @@
 \usepackage[margin=.75in]{geometry}
 \usepackage{multicol}
 \usepackage{paralist}
-\usepackage{datetime}
 \usepackage{hyperref}
-
-\newdateformat{monthyeardate}{%
-	\monthname[\THEMONTH], \THEYEAR}
 
 \titleformat{\section}
 {\bfseries\large}
@@ -23,21 +19,15 @@
 {0em}
 {}
 
-
 \renewcommand{\maketitle}{
 	\begin{center}
 		{\huge\bfseries\theauthor}
-		
+
 		\vspace{.25em}
 
-		burntfurniture@gmail.com
-
-		443-516-6830
-
-		\href{https://github.com/spiritualhost}{Github -- spiritualhost}
+		burntfurniture@gmail.com \quad|\quad 443-516-6830 \quad|\quad \href{https://github.com/spiritualhost}{GitHub: spiritualhost}
 	\end{center}
 }
-
 
 \pagenumbering{gobble}
 
@@ -49,50 +39,72 @@
 
 \maketitle
 
+\section{Summary}
+
+Systems administrator with nearly two years of hands-on experience managing Windows and Linux environments, network security, and end-user support. Experienced with Microsoft 365 (Exchange Online, Entra ID, SharePoint, Teams), Active Directory, DNS and DHCP, firewall and VPN configuration, SIEM/XDR monitoring, Veeam backup and recovery, and PowerShell, Python, and Bash automation. Comfortable resolving escalated issues independently, documenting environments thoroughly, and communicating clearly with clients during high-pressure incidents.
+
 \section{Technical Skills}
 
-\subsection{System Administration}
-\vspace{-1em} %Huge space here otherwise
-
+\vspace{-0.5em}
 \begin{multicols}{2}
 	\begin{compactitem}
-		\item Active Directory Management
-		\item Github Management
-		\item Fundamental Network Security (Sophos EDR, XDR, and Firewall)
-		\item Virtualization (VMware vSphere, VirtualBox, Proxmox Homelab)
-		\item Operating System Management
-		\item VPN Configuration (L2TP, Sophos Connect)
-		\item Encryption (PGP and Bitlocker)
-		\item Machine Learning (OpenAI API, Ollama)
-		\item PC Hardware and Construction
-		\item Ticketing Systems (GLPI)
+		\item \textbf{Microsoft 365:} Exchange Online (mailboxes, mail flow rules, spam filtering), Entra ID, SharePoint Online, Teams
+		\item \textbf{Identity \& Directory:} Active Directory, user provisioning, access control
+		\item \textbf{Networking:} DNS, DHCP, VPN (L2TP, Sophos Connect), RDP, WAP placement, network troubleshooting
+		\item \textbf{Backup \& Recovery:} Veeam (vSphere VMs), Veeam Vault, disaster recovery basics
+		\item \textbf{Network Security:} Sophos Firewall, Sophos EDR/XDR, endpoint security
+		\item \textbf{Monitoring \& SIEM:} Wazuh, security event and log monitoring
+		\item \textbf{Automation:} PowerShell, Bash, Python, Windows scheduled tasks
+		\item \textbf{Operating Systems:} Windows Server, Debian, Ubuntu, Arch Linux
+		\item \textbf{Virtualization:} VMware vSphere, VirtualBox, Proxmox homelab
+		\item \textbf{Encryption:} BitLocker, PGP
+		\item \textbf{Ticketing \& Documentation:} GLPI, GitHub
+		\item \textbf{Hardware:} PC and server-class hardware construction and maintenance
 	\end{compactitem}
 \end{multicols}
 
-\subsection{Programming}
-
-Python, Rust
-
-\subsection{Scripting} 
-
-Bash, Powershell
-
-\subsection{Markup}
-
-LaTex, HTML, CSS, R Markdown
+\noindent\textbf{Languages:} Python, Rust, Bash, PowerShell \quad \textbf{Markup:} LaTeX, HTML, CSS, R Markdown
 
 \section{Job Experience}
 
 \subsection{IT Site Administrator - Rollins Data Systems}
-\textbf{March 2025 - Present} - Daily management of IT infrastructure at a nationwide caging and donor relations company. Daily use of Arch, Debian, and Ubuntu Linux for system administration, scripting, and software configuration. Security through Sophos Firewall, Active Directory, Wazuh monitoring, and GLPI ticketing. Assistance of remote workers with vSphere Windows environments. Physical security setup (RFID door scanners, security cameras, WAP placement). PCI redaction assistance. Led emergency outreach to 350 clients during contractor ransomware attack, leveraging SendGrid email API to ensure uninterrupted communication. 
+\textbf{March 2025 to Present} \\
+Nationwide caging and donor relations company
+\begin{compactitem}
+	\item Administer IT infrastructure day to day, regularly working across 50+ servers running Windows Server and Linux (Arch, Debian, Ubuntu), including Active Directory, and handling escalated support issues promptly.
+	\item Configure and maintain network security using Sophos Firewall, Sophos EDR/XDR, and Wazuh for log and security event monitoring.
+	\item Troubleshoot network, VPN, and RDP problems, and support remote workers in vSphere-hosted Windows environments.
+	\item Develop and maintain PowerShell, Bash, and Python automation, including scheduled tasks and internal Python applications, to reduce repetitive administrative work.
+	\item Administer Microsoft 365, including Exchange Online mailbox management, mail flow rules and spam filtering, Entra ID user accounts, and SharePoint and Teams support.
+	\item Maintain and troubleshoot DNS and DHCP across Windows Server and Sophos Firewall, resolving name resolution and address assignment issues.
+	\item Back up vSphere virtual machines with Veeam and Veeam Vault, and maintain a basic disaster recovery process to support system recovery.
+	\item Manage support workflow and documentation of configurations and procedures in GLPI.
+	\item Set up physical and perimeter security, including RFID door access, security cameras, and wireless access point placement.
+	\item Assisted with PCI redaction to support compliance requirements.
+	\item Led emergency outreach to 350 clients during a contractor ransomware attack, using the SendGrid email API to keep communication uninterrupted.
+\end{compactitem}
 
 \subsection{Escrow Accountant - EngageUSA}
-\textbf{February 2024 - March 2025} - Managed daily book balancing for nationwide non-profit organizations, ranging from political action committees to animal rights organizations. Resolved discrepancies in data with caging team, improving accuracy of donor information in database. Administered payroll for mid-sized restaurant and political action committee, ensuring compliance with timekeeping and deductions.
+\textbf{February 2024 to March 2025} \\
+\begin{compactitem}
+	\item Balanced daily books for nationwide non-profit clients, from political action committees to animal rights organizations.
+	\item Resolved data discrepancies with the caging team, improving donor database accuracy.
+	\item Administered payroll for a mid-sized restaurant and a political action committee, ensuring compliance with timekeeping and deductions.
+\end{compactitem}
 
 \section{Education}
 
-\subsection{College} \textbf{June 2019 - December 2023}
-Attended the University of Maryland, Baltimore County, graduating in 2023 with a B.S. in Financial Economics. 
+\subsection{University of Maryland, Baltimore County}
+\textbf{June 2019 to December 2023} \\
+B.S. in Financial Economics
 
-\subsection{Certifications} Sophos Firewall Engineer Certification. CompTIA A+. CompTIA Security+. 
+\section{Certifications}
+
+\begin{compactitem}
+	\item CompTIA Security+
+	\item CompTIA A+
+	\item Sophos Firewall Engineer
+	\item CompTIA Network+ (in progress)
+\end{compactitem}
+
 \end{document}
